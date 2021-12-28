@@ -21,6 +21,10 @@ $(function(){
   $('.sec_01_list li').click(function(){
     $(this).addClass('on');
     $(this).siblings().removeClass('on');
+    let num = $(this).index();
+    console.log(num);
+    $('.sec_01_tab_slide').eq(num).show().siblings().hide();
+    
   });
 
   // *******************************************************
@@ -31,12 +35,16 @@ $(function(){
     autoplaySpeed:5000
   });
   // *******************************************************
-
-  $('.sec_01_tab_slide_wrap').slick({
+  $('.sec_01_tab_slide').slick({
+    slidesToShow: 7,
+    slidesToScroll: 5,
+    arrows:false,
     dots:true,
-    fade:true,
-    autoplaySpeed:3000,
+    autoplay: false,
+    autoplaySpeed: 2000,
   });
+  // *******************************************************
+
   // *******************************************************
   $('.family').click(function(){
     $('.family ul').stop().slideToggle();

@@ -360,19 +360,20 @@ body{
 .sec_01_tab_slide_wrap{
     margin: 0 auto;
     width: 1550px;
-    border:1px solid red;
+    height: 230px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 590px;
+    overflow: hidden;
+}
+/* **************************************** */
+.sec_01_tab_slide{
+    width: 100%;
+    height: 100%;
 }
 .sec_01_tab_slide div{
-    float:left;
     text-align: center;
-    margin-right: 20px;
-}
-.sec_01_tab_slide div:last-child{
-    margin-right: 0;
 }
 .sec_01_tab_slide div img{
     display: inline-block;
@@ -388,7 +389,40 @@ body{
     color:#000;
     margin-bottom: 12px;
 }
-
+/* **************************************** */
+.sec_01_tab_slide .slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.sec_01_tab_slide .slick-dots li{
+    float:left;
+    margin-right: 6px;
+}
+.sec_01_tab_slide .slick-dots li:last-child{
+    margin-right: 0;
+}
+.sec_01_tab_slide .slick-dots li button{
+    width: 12px;
+    height: 12px;
+    text-indent: -9999px;
+    background: #ccc;
+    border-radius: 100%;
+    border:none;
+}
+.sec_01_tab_slide .slick-dots .slick-active button{
+    width: 26px;
+    height: 12px;
+    text-indent: -9999px;
+    background: #ff6a00;
+    border-radius: 10px;
+    border:none;
+}
+/* **************************************** */
+.menu_slide_02{
+    display: none;
+}
 /* **************************************** */
 .sec_02{
     background:#ffebd2;
