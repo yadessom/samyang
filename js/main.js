@@ -33,18 +33,14 @@ $(function(){
   // *******************************************************
 
   $('.sec_01_tab_slide_wrap').slick({
-    // autoplay: true, //슬라이드 자동 실행
-    dots:true, //페이지 버튼 보이기
-    fade:true, //화면전환 방식
-    autoplaySpeed:3000, //자동 전환 속도
+    dots:true,
+    fade:true,
+    autoplaySpeed:3000,
   });
-  // $('.sec_01_slide').slick({
-  //   // autoplay: true, //슬라이드 자동 실행
-  //   dots:true, //페이지 버튼 보이기
-  //   fade:true, //화면전환 방식
-  //   autoplaySpeed:3000, //자동 전환 속도
-  // });
-  
+  // *******************************************************
+  $('.family').click(function(){
+    $('.family ul').stop().slideToggle();
+  });
   
 
 
